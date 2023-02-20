@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- searched the hibernate dtd and download hibernate-config 3.0 and copied below 3 lines from it -->
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+	<hibernate-configuration>
+	<session-factory>
+	<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+	<property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/cdac_tvm?useSSL=false</property>
+	<property name="hibernate.connection.username">root</property>
+	<property name="hibernate.connection.password">Akshay@7781</property>
+	<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+	<property name="hibernate.hbm2ddl.auto">update</property>
+	<property name="hibernate.show_sql">true</property>
+	<mapping class="com.hibernateannotationdemo.pojo.Product"/>
+	</session-factory>
+	
+	</hibernate-configuration>
+
+	
